@@ -1,0 +1,13 @@
+{
+  "name": "dlmalloc",
+  "version": "0.0.0",
+  "description": "Doug Lea's malloc",
+  "keywords": [
+    "dlmalloc"
+  ],
+  "author": "Brendan Moran <brendan.moran@arm.com>",
+  "homepage": "http://g.oswego.edu/dl/html/malloc.html",
+  "license": "Public Domain",
+  "dependencies": {},
+  "targetDependencies": {}
+}
