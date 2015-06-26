@@ -17,6 +17,7 @@ extern void *sbrk(intptr_t increment);
 
 #define LACKS_FCNTL_H
 #define LACKS_SYS_PARAM_H
+#define LACKS_UNISTD_H
 #define stderr 0
 #define HAVE_MORECORE 1
 #define MORECORE sbrk
