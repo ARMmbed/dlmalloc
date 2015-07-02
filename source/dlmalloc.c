@@ -12,19 +12,25 @@
 
 /* configuration */
 #include <stdint.h>
+#include <stddef.h>
 
 extern void *sbrk(intptr_t increment);
 
 #define LACKS_FCNTL_H
 #define LACKS_SYS_PARAM_H
-#define LACKS_UNISTD_H
 #define stderr 0
 #define HAVE_MORECORE 1
 #define MORECORE sbrk
 #define MORECORE_CONTIGUOUS 1
 #define MORECORE_CANNOT_TRIM 1
-#define USE_DL_PREFIX
+#define USE_DL_PREFIXs
 #define LACKS_TIME_H
+
+#if defined(__ARMCC_VERSION)
+#define LACKS_SYS_TYPES_H
+#include <string.h>
+#define LACKS_UNISTD_H
+#endif
 
 #define HAVE_MMAP 0
 #define HAVE_MREMAP 0
@@ -1033,7 +1039,7 @@ DLMALLOC_EXPORT size_t dlmalloc_max_footprint(void);
   guarantee that this number of bytes can actually be obtained from
   the system.
 */
-DLMALLOC_EXPORT size_t dlmalloc_footprint_limit();
+DLMALLOC_EXPORT size_t dlmalloc_footprint_limit(void);
 
 /*
   malloc_set_footprint_limit();
