@@ -23,7 +23,7 @@ extern void *sbrk(intptr_t increment);
 #define MORECORE sbrk
 #define MORECORE_CONTIGUOUS 1
 #define MORECORE_CANNOT_TRIM 1
-#define USE_DL_PREFIXs
+#define USE_DL_PREFIX
 #define LACKS_TIME_H
 
 #if defined(__ARMCC_VERSION)
