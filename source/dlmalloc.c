@@ -16,6 +16,7 @@
 
 extern void *sbrk(intptr_t increment);
 
+#define LACKS_UNISTD_H
 #define LACKS_FCNTL_H
 #define LACKS_SYS_PARAM_H
 #define stderr 0
@@ -29,7 +30,6 @@ extern void *sbrk(intptr_t increment);
 #if defined(__ARMCC_VERSION)
 #define LACKS_SYS_TYPES_H
 #include <string.h>
-#define LACKS_UNISTD_H
 #endif
 
 #define HAVE_MMAP 0
