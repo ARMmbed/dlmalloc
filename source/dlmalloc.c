@@ -14,7 +14,7 @@
 #include <stdint.h>
 #include <stddef.h>
 
-extern void *sbrk(intptr_t increment);
+extern void *mbed_sbrk(intptr_t increment);
 
 #define LACKS_UNISTD_H
 #define LACKS_FCNTL_H
