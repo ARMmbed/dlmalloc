@@ -1,6 +1,6 @@
 {
   "name": "dlmalloc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Doug Lea's malloc",
   "keywords": [
     "dlmalloc"
