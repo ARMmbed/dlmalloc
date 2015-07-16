@@ -21,7 +21,7 @@ extern void *mbed_sbrk(intptr_t increment);
 #define LACKS_SYS_PARAM_H
 #define stderr 0
 #define HAVE_MORECORE 1
-#define MORECORE sbrk
+#define MORECORE mbed_sbrk
 #define MORECORE_CONTIGUOUS 1
 #define MORECORE_CANNOT_TRIM 1
 #define USE_DL_PREFIX
