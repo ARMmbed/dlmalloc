@@ -8,7 +8,9 @@
            ftp://gee.cs.oswego.edu/pub/misc/malloc.c
          Check before installing!
  */
-
+/*
+ * PackageLicenseDeclared: CC0-1.0
+ */
 
 /* configuration */
 #include <stdint.h>
