@@ -7,7 +7,12 @@
   ],
   "author": "Brendan Moran <brendan.moran@arm.com>",
   "homepage": "http://g.oswego.edu/dl/html/malloc.html",
-  "license": "Public Domain",
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/CC0-1.0.html",
+      "type": "CC0-1.0"
+    }
+  ],
   "dependencies": {},
   "targetDependencies": {}
 }
