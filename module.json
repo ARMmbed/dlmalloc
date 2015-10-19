@@ -3,7 +3,9 @@
   "version": "0.0.6",
   "description": "Doug Lea's malloc",
   "keywords": [
-    "dlmalloc"
+    "dlmalloc",
+    "mbed",
+    "mbed-official"
   ],
   "author": "Brendan Moran <brendan.moran@arm.com>",
   "homepage": "http://g.oswego.edu/dl/html/malloc.html",
